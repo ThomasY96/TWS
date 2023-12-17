@@ -1,0 +1,1061 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2">
+        <rdfs:comment>owl para nuestra empresa</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#realizaCompra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#realizaCompra">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCliente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <rdfs:label>realizaCompra</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCatalogoDeProductos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCatalogoDeProductos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:label>tieneCatalogoDeProductos</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCliente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCliente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:label>tieneCliente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneProducto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneProducto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:label>tieneProducto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneProveedor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneProveedor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor"/>
+        <rdfs:label>tieneProveedor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#cantidadDeCompra -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#cantidadDeCompra">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>cantidadDeCompra</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCaracter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneCaracter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneCaracter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescripcionDeProducto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescripcionDeProducto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneDescripcionDeProducto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescuento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescuento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>tieneDescuento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneNombre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeProducto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeProducto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneNombreDeProducto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeProveedor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeProveedor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneNombreDeProveedor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeUsuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneNombreDeUsuario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tieneNombreDeUsuario</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>tienePrecio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecioDollar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecioDollar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>tienePrecioDollar</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneStock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneStock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>tieneStock</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneTotalAnual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneTotalAnual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>tieneTotalAnual</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#totalCompra -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#totalCompra">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>totalCompra</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Administrador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Administrador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:label>ClienteRegistrado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#ClienteRegistrado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#ClienteRegistrado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:label>Administrador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra">
+        <rdfs:label>Compra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Electrónico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Electrónico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:label>Electronico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa">
+        <rdfs:label>Empresa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MateriaOficina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MateriaOficina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:label>MateriaOficina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MejorCliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MejorCliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:label>MejorCliente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto">
+        <rdfs:label>Producto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario"/>
+        <rdfs:label>Profesor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor">
+        <rdfs:label>Proveedor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdfs:label>Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Usuario">
+        <rdfs:label>Usuario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#YJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#YJ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Empresa"/>
+        <untitled-ontology-2:tieneCaracter>YJ es una empresa líder en el mercado que se especializa en la venta de artículos de oficina y productos de tecnología de la información. Con años de experiencia en el sector, nos hemos establecido como una marca de confianza, ofreciendo productos de alta calidad que satisfacen las necesidades de nuestros clientes. Nuestra misión es proporcionar soluciones innovadoras y eficientes para las empresas y profesionales, ayudándoles a mejorar su productividad y rendimiento en el trabajo.</untitled-ontology-2:tieneCaracter>
+        <untitled-ontology-2:tieneNombre>YJ</untitled-ontology-2:tieneNombre>
+        <rdfs:label>empresa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <untitled-ontology-2:tieneProducto rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto2"/>
+        <untitled-ontology-2:cantidadDeCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-2:cantidadDeCompra>
+        <untitled-ontology-2:totalCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</untitled-ontology-2:totalCompra>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>compra1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <untitled-ontology-2:tieneProducto rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto3"/>
+        <untitled-ontology-2:cantidadDeCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:cantidadDeCompra>
+        <untitled-ontology-2:totalCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3366.0</untitled-ontology-2:totalCompra>
+        <rdfs:label>compra2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+        <untitled-ontology-2:tieneProducto rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto1"/>
+        <untitled-ontology-2:cantidadDeCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-2:cantidadDeCompra>
+        <untitled-ontology-2:totalCompra rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.64</untitled-ontology-2:totalCompra>
+        <rdfs:label>compra3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Software"/>
+        <untitled-ontology-2:tieneProveedor rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor1"/>
+        <untitled-ontology-2:tieneDescripcionDeProducto>software de Microsoft</untitled-ontology-2:tieneDescripcionDeProducto>
+        <untitled-ontology-2:tieneNombreDeProducto>Microsoft 365 Familia</untitled-ontology-2:tieneNombreDeProducto>
+        <untitled-ontology-2:tienePrecio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.64</untitled-ontology-2:tienePrecio>
+        <untitled-ontology-2:tieneStock rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:tieneStock>
+        <rdfs:label>producto1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MateriaOficina"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <untitled-ontology-2:tieneProveedor rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor1"/>
+        <untitled-ontology-2:tieneNombreDeProducto>VEESUN Bloc</untitled-ontology-2:tieneNombreDeProducto>
+        <untitled-ontology-2:tienePrecio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8</untitled-ontology-2:tienePrecio>
+        <untitled-ontology-2:tieneStock rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:tieneStock>
+        <rdfs:label>producto2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#producto3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Electrónico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+        <untitled-ontology-2:tieneProveedor rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor2"/>
+        <untitled-ontology-2:tieneNombreDeProducto>MSI Raider GE68HX</untitled-ontology-2:tieneNombreDeProducto>
+        <untitled-ontology-2:tienePrecio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3399.0</untitled-ontology-2:tienePrecio>
+        <untitled-ontology-2:tieneStock rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-2:tieneStock>
+        <rdfs:label>producto3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor"/>
+        <untitled-ontology-2:tieneNombreDeProveedor>Amazon</untitled-ontology-2:tieneNombreDeProveedor>
+        <rdfs:label>proveedor1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#proveedor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Proveedor"/>
+        <untitled-ontology-2:tieneNombreDeProveedor>Vendor</untitled-ontology-2:tieneNombreDeProveedor>
+        <rdfs:label>proveedor2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#ClienteRegistrado"/>
+        <untitled-ontology-2:realizaCompra rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra1"/>
+        <untitled-ontology-2:tieneNombreDeUsuario>Yang</untitled-ontology-2:tieneNombreDeUsuario>
+        <untitled-ontology-2:tieneTotalAnual rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3366.0</untitled-ontology-2:tieneTotalAnual>
+        <rdfs:label>user1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Administrador"/>
+        <untitled-ontology-2:realizaCompra rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra2"/>
+        <untitled-ontology-2:tieneNombreDeUsuario>Javier</untitled-ontology-2:tieneNombreDeUsuario>
+        <rdfs:label>user2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Profesor"/>
+        <untitled-ontology-2:realizaCompra rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#compra3"/>
+        <untitled-ontology-2:tieneNombreDeUsuario>Sampa</untitled-ontology-2:tieneNombreDeUsuario>
+        <rdfs:label>user3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#user4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/compra">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/cantidad">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/total">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/precio">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInEuros">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInDollars">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>ListaDeCompra</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#ClienteRegistrado"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#realizaCompra"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/compra"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneProducto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/compra"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#cantidadDeCompra"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/compra"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/cantidad"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/cantidad"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderByDescending"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/cantidad"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Regla para deteminar los mejores Clientes</rdfs:comment>
+        <rdfs:label>MejorCliente</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#ClienteRegistrado"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneTotalAnual"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/total"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/total"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MejorCliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Descuento10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#totalCompra"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#realizaCompra"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescuento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Descuento5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Compra"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#totalCompra"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/amount"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#realizaCompra"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescuento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/u"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Descuento especifica para Mejor Clientes</rdfs:comment>
+        <rdfs:label>Descuento20</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#MejorCliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tieneDescuento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>MediaDePrecios</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/precio"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#avg"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/precio"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>CambiarADollar</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#Producto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInEuros"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInDollars"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInEuros"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2#tienePrecioDollar"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yangl/ontologies/2023/9/untitled-ontology-2/priceInDollars"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
